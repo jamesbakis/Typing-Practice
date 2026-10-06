@@ -1,0 +1,39 @@
+a[i] = 0;
+if(x>y)
+count++
+list[-1]
+{a, b}
+fn()
+x += 1
+var=5
+
+arr[0]
+a - b
+func()
+() => {}
+[1, 2]
+(x)
+i <= 9
+x += y
+{ }
+[ ]
+=> { }
+a+b-c
+idx = 1
+x >= 0
+i -= 1
+
+
+
+
+
+val_1
+[a]=b
+(x_y)
+{id}
+i++
+--j
+ay
+(a+b)
+arr[]
+init()
