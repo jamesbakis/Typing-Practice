@@ -1,8 +1,10 @@
 import random
 def main():
-
-    phrases = ["[]", "()", "{}", "([x])", "{x}", "(x)", "function(variable)", "dictionary[index]", "3 < 7", "7 > 3"]
-
+    phrases = []
+    with open("phrases.txt", "r") as file:
+        for line in file:
+            phrases.append(line)
+                   
     target = input("Target Streak: ")
     target = int(target)
     streak = 0
