@@ -2,11 +2,17 @@ import random
 def main():
     phrases = []
 
-    chosenFile = input("Choose file in current directory to read from: ")
-    with open(chosenFile, "r") as file:
-        for line in file:
-            phrases.append(line.rstrip())
-
+    
+    fileFound = False
+    while not fileFound:
+        chosenFile = input("Choose file in current directory to read from: ")
+        try:
+            with open(chosenFile, "r") as file:
+                fileFound = True
+                for line in file:
+                    phrases.append(line.rstrip())
+        except FileNotFoundError:
+            print("No such file or directory")
     target = ""
     while not target.isdigit(): 
         target = input("Target Streak: ")
