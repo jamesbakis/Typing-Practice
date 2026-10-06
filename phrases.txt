@@ -1,0 +1,14 @@
+[] 
+() 
+{} 
+([x]) 
+{x} 
+(x) 
+function(variable) 
+dictionary[index]
+fun(var1, var2) {}
+if (x = 5) {} 
+3 < 7
+7 > 3
+4 <= 8
+3 <= 9
