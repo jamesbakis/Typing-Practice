@@ -1,10 +1,12 @@
 import random
 def main():
     phrases = []
-    with open("phrases.txt", "r") as file:
+
+    chosenFile = input("Choose file in current directory to read from: ")
+    with open(chosenFile, "r") as file:
         for line in file:
             phrases.append(line)
-                   
+
     target = input("Target Streak: ")
     target = int(target)
     streak = 0
