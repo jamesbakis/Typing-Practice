@@ -5,9 +5,11 @@ def main():
     chosenFile = input("Choose file in current directory to read from: ")
     with open(chosenFile, "r") as file:
         for line in file:
-            phrases.append(line)
+            phrases.append(line.rstrip())
 
-    target = input("Target Streak: ")
+    target = ""
+    while not target.isdigit(): 
+        target = input("Target Streak: ")
     target = int(target)
     streak = 0
     phrase = ""
